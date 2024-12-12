@@ -3,4 +3,6 @@
 @tailwind components;
 @tailwind utilities;
 
-body{}
+body{
+    font-family: "Jost", serif;
+}
