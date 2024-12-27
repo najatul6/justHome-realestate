@@ -6,7 +6,7 @@ import logo from "../../../assets/logo/logo-white.svg";
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <header className="fixed top-0 left-0 w-full py-[1.3rem] px-[2%] lg:py-5 lg:px-[2%] lg:flex lg:justify-between lg:items-center z-[100] before:content-[''] before:top-0 before:left-0 before:absolute before:w-full before:h-full before:bg-gradient-back before:backdrop-blur-[50px] before:z-[-1] shadow-xl shadow-gradient-back ">
+    <header className="fixed top-0 left-0 w-full py-[1.3rem] px-[2%] lg:py-5 lg:px-[2%] lg:flex lg:justify-between lg:items-center z-[100] before:content-[''] before:top-0 before:left-0 before:absolute before:w-full before:h-full before:bg-gradient-back before:z-[-1] shadow-xl shadow-gradient-back ">
       <a href="/" className="text-4xl text-white font-bold">
        <img src={logo} alt="Brand logo" />
       </a>
@@ -21,7 +21,7 @@ const NavBar = () => {
       <nav
         className={`${
           isOpen ? "h-[17 rem]" : " h-0 overflow-hidden "
-        } top-full  absolute left-0 w-full bg-gradient-back backdrop-blur-2xl shadow-2xl shadow-gradient-back transition-all duration-500 lg:h-auto lg:static lg:w-auto lg:bg-inherit lg:backdrop-blur-0 lg:shadow-none delay-700 lg:delay-0`}
+        } top-full  absolute left-0 w-full bg-gradient-back shadow-2xl shadow-gradient-back transition-all duration-500 lg:h-auto lg:static lg:w-auto lg:bg-inherit lg:backdrop-blur-0 lg:shadow-none delay-700 lg:delay-0`}
       >
         <ul className="lg:flex gap-6">
           {routes?.map((route) => (
