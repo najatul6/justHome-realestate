@@ -2,6 +2,7 @@ import { IoClose, IoMenu } from "react-icons/io5";
 import { useState } from "react";
 import { routes } from "../../../Utils/menu";
 import logo from "../../../assets/logo/logo-white.svg";
+import { NavLink } from "react-router-dom";
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -33,9 +34,9 @@ const NavBar = () => {
                   : "translate-y-[-50px] transition-all duration-700"
               } text-white font-medium text-lg lg:text-xl my-[1.5rem] lg:my-0 mx-0 lg:ml-10 block text-center duration-500 transition lg:translate-y-0 `}
             >
-              <a href={route?.path} className=" px-2 py-3 block">
+              <NavLink href={route?.path} className=" px-2 py-3 block">
                 {route?.name}
-              </a>
+              </NavLink>
             </li>
           ))}
         </ul>
