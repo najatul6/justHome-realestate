@@ -34,7 +34,7 @@ const NavBar = () => {
                   : "translate-y-[-50px] transition-all duration-700"
               } text-white font-medium text-lg lg:text-xl my-[1.5rem] lg:my-0 mx-0 lg:ml-10 block text-center duration-500 transition lg:translate-y-0 `}
             >
-              <NavLink href={route?.path} className=" px-2 py-3 block">
+              <NavLink to={route?.path} className=" px-2 py-3 block">
                 {route?.name}
               </NavLink>
             </li>
