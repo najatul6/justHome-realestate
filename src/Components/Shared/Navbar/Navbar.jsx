@@ -1,6 +1,6 @@
 import { IoClose, IoMenu } from "react-icons/io5";
-import { routes } from "../../Utils/utils";
 import { useState } from "react";
+import { routes } from "../../../Utils/menu";
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
