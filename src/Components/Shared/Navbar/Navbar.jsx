@@ -8,7 +8,7 @@ const NavBar = () => {
   return (
     <header className="fixed top-0 left-0 w-full py-[1.3rem] px-[2%] lg:py-5 lg:px-[2%] lg:flex lg:justify-between lg:items-center z-[100] before:content-[''] before:top-0 before:left-0 before:absolute before:w-full before:h-full before:bg-gradient-back before:backdrop-blur-[50px] before:z-[-1] shadow-xl shadow-gradient-back ">
       <a href="/" className="text-4xl text-white font-bold">
-       <img src={logo} alt="" />
+       <img src={logo} alt="Brand logo" />
       </a>
       <label
         htmlFor=""
